@@ -1,5 +1,7 @@
 const form = document.getElementById("example-form");
 const userList = document.querySelector(".user-list");
+const empty = document.getElementById("empty");
+
 const usernameError = document.querySelector(".username-error");
 const passwordError = document.querySelector(".password-error");
 const confirmPasswordError = document.querySelector(".confirm-password-error");
@@ -63,6 +65,9 @@ form.addEventListener("submit", (event) => {
     let cond4 = emailValidation(email);
 
     if (cond1 && cond2 && cond3 && cond4) {
+
+        userList.removeChild(empty);
+
         let newUser = document.createElement("p");
         newUser.textContent = `${username} - ${email} - ${date}`;
 

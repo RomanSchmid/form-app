@@ -19,10 +19,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     box-shadow: 0 0 6rem rgba(0,0,0, 0.5);
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 h1, p {
@@ -30,8 +30,8 @@ h1, p {
 }
 
 h1 {
-    font-size: 2.5rem;
-    padding: 20px 0 30px 0;
+    font-size: 3rem;
+    padding: 10px 0 30px 0;
 }
 
 h1::after {
@@ -59,7 +59,7 @@ form {
 input {
     border: 1px solid rgba(150, 150, 150, 0.712);
     height: 40px;
-    width: 70%;
+    width: 80%;
     border-radius: 10px;
     padding: 10px;
 }
@@ -78,8 +78,27 @@ button {
     box-shadow: 0 0 1rem rgba(0,0,0, 0.5);
 }
 
+.user-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-list {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    /* border: 1px solid rgba(134, 134, 134, 0.603); */
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.user-list p {
+    font-size: 0.9rem;
 }
 
 
