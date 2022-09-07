@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Example Form App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Example form app</h1>
+        <p>Please use the register form</p>
+
+        <form id="example-form">
+            <input 
+                type="text" 
+                name="username" 
+                id="username" 
+                placeholder="Enter username..."
+            >
+            <div class="username-error error">
+                <p>Enter value between 4 and 64 characters!</p>
+            </div>
+            <input 
+                type="password" 
+                name="password" 
+                id="password"
+                placeholder="Enter password..."
+            >
+            <div class="password-error error">
+                <p>Enter value between 8 and 64 characters!"</p>
+            </div>
+            <input 
+                type="password" 
+                name="confirmPassword" 
+                id="confirmPassword"
+                placeholder="Confirm password..."
+            >
+            <div class="confirm-password-error error">
+                <p>Values are not equal!</p>
+            </div>
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="Enter e-mail..."
+            >
+            <div class="email-error error">
+                <p>Enter valid value!</p>
+            </div>
+            <input 
+                type="date" 
+                name="date" 
+                id="date"
+            >
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="user-list">
+            <h2>User list</h2>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
