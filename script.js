@@ -66,8 +66,8 @@ form.addEventListener("submit", (event) => {
 
     // If all conditions are true -> Add an user to the user list
     if (cond1 && cond2 && cond3 && cond4) {
-
-        userList.removeChild(empty);
+        
+        empty.style.display = "none";
 
         let newUser = document.createElement("p");
         newUser.textContent = `${username} - ${email} - ${date}`;
